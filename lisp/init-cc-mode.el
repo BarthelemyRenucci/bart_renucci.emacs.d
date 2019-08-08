@@ -46,7 +46,7 @@
   ;; emacs-c-opening-corresponding-header-file
   (local-set-key (kbd "C-x C-o") 'ff-find-other-file)
 
-  (setq cc-search-directories '("." "/usr/include" "/usr/local/include/*" "../*/include" "$WXWIN/include"))
+  (setq cc-search-directories '("." "../*/include"))
 
   ;; {{ @see https://github.com/redguardtoo/cpputils-cmake
   ;; In theory, you can write your own Makefile for `flyamke-mode' without cmake.
