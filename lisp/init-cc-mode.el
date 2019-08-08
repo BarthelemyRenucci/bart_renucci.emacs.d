@@ -46,6 +46,8 @@
   ;; emacs-c-opening-corresponding-header-file
   (local-set-key (kbd "C-x C-o") 'ff-find-other-file)
 
+  (smart-tabs-insinuate 'c)
+
   (setq cc-search-directories '("." "../*/include"))
 
   ;; {{ @see https://github.com/redguardtoo/cpputils-cmake
