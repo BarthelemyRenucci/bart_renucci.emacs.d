@@ -1146,6 +1146,9 @@ Including indent-buffer, which should not be called automatically on save."
             (auto-fill-mode 1)
             (if (eq window-system 'x)
                 (font-lock-mode 1))))
+;; {{ Set fullscreen mode
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
 ;; }}
 
 ;; {{ wgrep setup
