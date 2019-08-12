@@ -48,6 +48,8 @@
 
   (smart-tabs-insinuate 'c)
 
+  (undo-tree-mode)
+
   (setq cc-search-directories '("." "../*/include"))
 
   ;; {{ @see https://github.com/redguardtoo/cpputils-cmake
