@@ -1247,4 +1247,8 @@ See https://github.com/RafayGhafoor/Subscene-Subtitle-Grabber."
 
 ;; }}
 
+;; {{ Magit
+(global-set-key (kbd "C-x g") 'magit-status)
+;; }}
+
 (provide 'init-misc)
