@@ -1250,5 +1250,9 @@ See https://github.com/RafayGhafoor/Subscene-Subtitle-Grabber."
 ;; {{ Magit
 (global-set-key (kbd "C-x g") 'magit-status)
 ;; }}
+;; {{ Add zone
+(require 'zone)
+(zone-when-idle 120)
+;; }}
 
 (provide 'init-misc)
