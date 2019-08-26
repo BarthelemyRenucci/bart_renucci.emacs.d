@@ -13,40 +13,47 @@
 ;; }}
 
 ;; {{ Custom project jump
-(global-set-key (kbd "C-x C-²")
+(global-set-key (kbd "C-x ²")
                 (lambda()
                   (interactive)
                   (dired "~/.emacs.d")))
 
-(global-set-key (kbd "C-x C-&")
+(global-set-key (kbd "C-x &")
                 (lambda()
                   (interactive)
                   (dired "~/birota-repo/embedded-firmware")))
 
-(global-set-key (kbd "C-x C-é")
+(global-set-key (kbd "C-x é")
                 (lambda()
                   (interactive)
                   (dired "~/birota-repo/embedded-firmware/modules")))
 
-(global-set-key (kbd "C-x C-\"")
+(global-set-key (kbd "C-x \"")
                 (lambda()
                   (interactive)
                   (dired "~/birota-repo/embedded-firmware/project/main02")))
 
-(global-set-key (kbd "C-x C-'")
+(global-set-key (kbd "C-x '")
                 (lambda()
                   (interactive)
                   (dired "~/birota-repo/embedded-firmware/modules/includes")))
 
-(global-set-key (kbd "C-x C-(")
+(global-set-key (kbd "C-x (")
                 (lambda()
                   (interactive)
                   (dired "~/birota-repo/embedded-firmware/tools")))
 
-(global-set-key (kbd "C-x C--")
+(global-set-key (kbd "C-x -")
                 (lambda()
                   (interactive)
                   (dired "~/birota-repo/embedded-firmware/external")))
+;; }}
+
+;; {{ Custom project jump
+(global-set-key (kbd "C-x è")
+                (lambda()
+                  (interactive)
+                  (find-file "~/.organistation.org")))
 ;; }}
 
 ;; {{ Makefile mode for custom makefile extensions
