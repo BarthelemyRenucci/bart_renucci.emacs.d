@@ -12,4 +12,11 @@
   ;; emacs 24.4+
   (setq electric-indent-chars (delq ?: electric-indent-chars)))
 
+;;{{ beacon for python
+
+(beacon-mode 1)
+
+;;}}
+
+
 (provide 'init-python)
