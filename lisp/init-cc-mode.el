@@ -50,6 +50,8 @@
 
   (undo-tree-mode)
 
+  (beacon-mode 1)
+
   (setq cc-search-directories '("." "../*/include"))
 
   ;; {{ @see https://github.com/redguardtoo/cpputils-cmake
