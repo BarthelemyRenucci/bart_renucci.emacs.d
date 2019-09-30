@@ -51,7 +51,7 @@
               ediff-window-setup-function 'ediff-setup-windows-plain
               grep-highlight-matches t
               grep-scroll-output t
-              indent-tabs-mode nil
+              inden-tabs-mode t
               line-spacing 0
               mouse-yank-at-point t
               set-mark-command-repeat-pop t
