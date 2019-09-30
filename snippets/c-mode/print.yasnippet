@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: print in current file
+# key: prnt
+# --
+
+printf("[`(upcase(file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`] $0\r\n");
