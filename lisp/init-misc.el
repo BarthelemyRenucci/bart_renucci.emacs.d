@@ -1271,4 +1271,10 @@ See https://github.com/RafayGhafoor/Subscene-Subtitle-Grabber."
 (nyan-start-animation)
 ;; }}
 
+;; {{ Add undo tree mode
+
+(global-undo-tree-mode)
+
+;;}}
+
 (provide 'init-misc)
