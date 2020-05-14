@@ -72,4 +72,31 @@
       (cons '("\\.proto\\'" . protobuf-mode) auto-mode-alist))
 ;; }}
 
+;; {{ Magit d for both ediff
+(defun ediff-copy-both-to-C ()
+  (interactive)
+  (ediff-copy-diff ediff-current-difference nil 'C nil
+                   (concat
+                    (ediff-get-region-contents ediff-current-difference 'A ediff-control-buffer)
+                    (ediff-get-region-contents ediff-current-difference 'B ediff-control-buffer))))
+(defun add-d-to-ediff-mode-map () (define-key ediff-mode-map "d" 'ediff-copy-both-to-C))
+(add-hook 'ediff-keymap-setup-hook 'add-d-to-ediff-mode-map)
+;; }}
+
+;; {{ Add search at point for swiper
+(global-set-key (kbd "C-M-u") (lambda () (interactive) (swiper-thing-at-point)))
+;; }}
+
+;; {{ Shell cmd
+
+(global-set-key (kbd "C-c m") (lambda () (interactive) (shell-command "cd ~/birota-repo/embedded-firmware/project/main02 && make flash -j &")))
+
+(global-set-key (kbd "C-c !") (lambda () (interactive) (shell-command "make -j &")))
+
+(global-set-key (kbd "C-c g") (lambda () (interactive) (shell-command "git submodule update --init &")))
+
+(global-set-key (kbd "C-c p") (lambda () (interactive) (shell-command (format "autopep8 -i %s" (thing-at-point 'filename)))))
+
+;; }}
+
 (provide 'init-custom-keybindings)
