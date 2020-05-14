@@ -1264,4 +1264,11 @@ See https://github.com/RafayGhafoor/Subscene-Subtitle-Grabber."
 (transparency 95)
 ;; }}
 
+;; {{ Add nyan-cat
+(require 'nyan-mode)
+(setq nyan-mode t)
+(setq nyan-animate-nyancat t)
+(nyan-start-animation)
+;; }}
+
 (provide 'init-misc)

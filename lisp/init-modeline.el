@@ -44,6 +44,10 @@
                              'help-echo "Buffer is read-only"))))
     "] "
 
+	'(:eval (list (nyan-create)))
+
+	" "
+
     ;;global-mode-string, org-timer-set-timer in org-mode need this
     (propertize "%M" 'face nil)
 
