@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: print debug in current file
+# key: dbprnt
+# --
+
+printf("[`(upcase(file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`] %d\r\n", __LINE__);
