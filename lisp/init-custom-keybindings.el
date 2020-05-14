@@ -1,13 +1,5 @@
 ;; -*- coding: utf-8; lexical-binding: t; -*-
 
-
-;; {{ Modified C-h to delete
-(global-set-key (kbd "C-?") 'help-command)
-(global-set-key (kbd "M-?") 'mark-paragraph)
-(global-set-key (kbd "C-h") 'delete-backward-char)
-(global-set-key (kbd "M-h") 'backward-kill-word)
-;; }}
-
 ;; {{ Magit
 (global-set-key (kbd "C-x g") 'magit-status)
 ;; }}
@@ -22,6 +14,11 @@
                 (lambda()
                   (interactive)
                   (dired "~/birota-repo/embedded-firmware")))
+
+(global-set-key (kbd "C-x C-&")
+                (lambda()
+                  (interactive)
+                  (dired "~/birota-repo")))
 
 (global-set-key (kbd "C-x é")
                 (lambda()
@@ -47,6 +44,12 @@
                 (lambda()
                   (interactive)
                   (dired "~/birota-repo/embedded-firmware/external")))
+
+(global-set-key (kbd "C-M-i")
+                (lambda()
+                  (interactive)
+				  (idle-highlight-mode)))
+
 ;; }}
 
 ;; {{ Custom project jump
@@ -63,6 +66,8 @@
       (cons '("\\.docker\\'" . makefile-mode) auto-mode-alist))
 (setq auto-mode-alist
       (cons '("\\.release\\'" . makefile-mode) auto-mode-alist))
+(setq auto-mode-alist
+      (cons '("\\.gen\\'" . makefile-mode) auto-mode-alist))
 (setq auto-mode-alist
       (cons '("\\.proto\\'" . protobuf-mode) auto-mode-alist))
 ;; }}
