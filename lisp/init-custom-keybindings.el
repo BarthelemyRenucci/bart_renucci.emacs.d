@@ -10,6 +10,11 @@
                   (interactive)
                   (dired "~/.emacs.d")))
 
+(global-set-key (kbd "C-x C-²")
+                (lambda()
+                  (interactive)
+                  (dired "~/misc")))
+
 (global-set-key (kbd "C-x &")
                 (lambda()
                   (interactive)
@@ -29,6 +34,12 @@
                 (lambda()
                   (interactive)
                   (dired "~/birota-repo/embedded-firmware/project/main02")))
+
+(global-set-key (kbd "C-x C-\"")
+                (lambda()
+                  (interactive)
+                  (dired "~/birota-repo/embedded-firmware/project/zoovbox01")))
+
 
 (global-set-key (kbd "C-x '")
                 (lambda()
