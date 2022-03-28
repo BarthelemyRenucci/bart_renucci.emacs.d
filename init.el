@@ -140,6 +140,7 @@
   ;; need statistics of keyfreq asap
   (require-init 'init-keyfreq t)
   (require-init 'init-httpd t)
+  (require-init 'init-json-mode t)
 
   ;; projectile costs 7% startup time
 
