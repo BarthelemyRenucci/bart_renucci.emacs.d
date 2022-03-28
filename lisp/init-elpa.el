@@ -13,6 +13,7 @@
 ;; if it's not visible after  `list-packages'.
 (defvar melpa-include-packages
   '(ace-window ; lastest stable is released on year 2014
+	ag
     auto-package-update
     nov
     bbdb
@@ -229,6 +230,7 @@ PACKAGE is a symbol, VERSION is a vector as produced by `version-to-list', and
 
 (require-package 'async)
 ; color-theme 6.6.1 in elpa is buggy
+(require-package 'ag)
 (require-package 'amx)
 (require-package 'avy)
 (require-package 'auto-yasnippet)
