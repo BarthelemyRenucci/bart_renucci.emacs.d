@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: print semph in thing
+# key: semph
+# --
+
+SemaphoreHandle_t mutex;
+StaticSemaphore_t mutex_buffer;
+
+_ctx.mutex = xSemaphoreCreateMutexStatic(&_ctx.mutex_buffer);$0

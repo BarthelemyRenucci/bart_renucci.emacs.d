@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: print queue in ctx
+# key: queue
+# --
+
+#define $1_QUEUE_SIZE  ($2)
+#define $1_QUEUE_ELEMENT_SIZE (sizeof($3))
+
+QueueHandle_t queue;
+StaticQueue_t static_queue;
+uint8_t storage_queue[$1_QUEUE_SIZE * $1_QUEUE_ELEMENT_SIZE];
+
+_ctx.queue = xQueueCreateStatic($1_QUEUE_SIZE,
+		   	                    $1_QUEUE_ELEMENT_SIZE,
+	                            _ctx.storage_queue,
+	                            &_ctx.static_queue);
+$0
+

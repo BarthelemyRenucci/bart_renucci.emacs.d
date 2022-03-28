@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: print warn in current file
+# key: warn
+# --
+
+warn(`(upcase(file-name-nondirectory (directory-file-name (file-name-directory buffer-file-name))))`, "$0\r\n");

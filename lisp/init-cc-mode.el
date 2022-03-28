@@ -52,6 +52,8 @@
 
   (beacon-mode 1)
 
+  (c-set-offset 'case-label '+)
+
   (setq cc-search-directories '("." "../*/include"))
 
   ;; {{ @see https://github.com/redguardtoo/cpputils-cmake

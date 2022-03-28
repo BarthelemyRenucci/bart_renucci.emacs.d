@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: print error in current file
+# key: error
+# --
+
+error(`(upcase(file-name-nondirectory (directory-file-name (file-name-directory buffer-file-name))))`, "$0\r\n");
