@@ -192,3 +192,6 @@
 ;;; no-byte-compile: t
 ;;; End:
 (put 'erase-buffer 'disabled nil)
+
+(setq initial-major-mode 'text-mode)
+
