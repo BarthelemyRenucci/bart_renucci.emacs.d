@@ -127,7 +127,7 @@
 
 (global-set-key (kbd "C-c !") (lambda () (interactive) (shell-command "make -j &")))
 
-(global-set-key (kbd "C-c g") (lambda () (interactive) (shell-command "git submodule update --init &")))
+(global-set-key (kbd "C-c g") (lambda () (interactive) (shell-command "git submodule update --init --recursive &")))
 
 (global-set-key (kbd "C-c p") (lambda () (interactive) (shell-command (format "autopep8 -i %s" (thing-at-point 'filename)))))
 
