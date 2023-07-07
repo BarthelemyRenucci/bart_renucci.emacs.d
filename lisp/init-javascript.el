@@ -6,10 +6,10 @@
 (setq-default js2-use-font-lock-faces t
               js2-mode-must-byte-compile nil
               ;; {{ comment indention in modern frontend development
-              javascript-indent-level 2
-              js-indent-level 2
-              css-indent-offset 2
-              typescript-indent-level 2
+              javascript-indent-level 4
+              js-indent-level 4
+              css-indent-offset 4
+              typescript-indent-level 4
               ;; }}
               js2-strict-trailing-comma-warning nil ; it's encouraged to use trailing comma in ES6
               js2-idle-timer-delay 0.5 ; NOT too big for real time syntax check
@@ -300,6 +300,10 @@ INDENT-SIZE decide the indentation level.
 (defun typescript-mode-hook-setup ()
   (setq imenu-create-index-function 'mo-js-imenu-make-index))
 (add-hook 'typescript-mode-hook 'typescript-mode-hook-setup)
+
+(setq js2-mode-hook
+  '(lambda () (progn
+    (set-variable 'indent-tabs-mode nil))))
 
 (setq-default js2-additional-externs
               '("$"
