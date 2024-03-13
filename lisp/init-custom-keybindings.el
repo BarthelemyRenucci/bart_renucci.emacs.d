@@ -54,7 +54,7 @@
 (global-set-key (kbd "C-x C-(")
                 (lambda()
                   (interactive)
-                  (dired "~/birota-repo/embedded-firmware/tools/view_raw_data_logs")))
+                  (dired "/home/bart/birota-repo/embedded-rd-logs-viewer/")))
 
 (global-set-key (kbd "C-x -")
                 (lambda()
@@ -197,5 +197,6 @@
 (global-set-key (kbd "C-c w")         (quote copy-word))
 (global-set-key (kbd "C-c l")         (quote copy-line))
 ;; }}
+
 
 (provide 'init-custom-keybindings)
